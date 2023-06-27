@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAKEDOWNBOYS - GROUP</title>
+    <link rel="icon" type="image/svg" href="./img/svg/icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&family=Prompt&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header class="header center">
+        <div class="header-block">
+            <img class="header-svg__icon" src="./img/svg/icon.svg" alt="">
+            <h1 class="header-title">Fakedownboys</h1>
+            <ul class="header-list">
+                <li class="header-item">
+                    <a class="header-link" href="#" id="projects-link">Проекты</a>
+                </li>
+                <li class="header-item">
+                    <a class="header-link" href="#" id="about-link">О Нас</a>
+                </li>
+                <li class="header-item">
+                    <a class="header-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main center">
+        <section class="welcome-block">
+            <h2 class="welcome-title">Group FAKEDOWNBOYS</h2>
+            <p class="welcome-subtitle">Добро пожаловать в группу FAKEDOWNBOYS! Мы опытные специалисты в сфере
+                Web-Development и Python-Development!</p>
+        </section>
+        <section class="projects-block" id="projects-block">
+            <h3 class="projects-title">Наши Проекты</h3>
+            <div class="swiper projectsSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://ibenji.github.io/car-service-html/">
+                            <img src="./img/jpg/preview1.jpg" alt="Работа 1">
+                        </a>
+                        <div class="swiper-text__overlay">Landing Page by deprussian</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://ibenji.github.io/doors-service-html/">
+                            <img src="./img/jpg/preview2.jpg" alt="Работа 1">
+                        </a>
+                        <div class="swiper-text__overlay">Landing Page by deprussian</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://ibenji.github.io/open-landingpage-html/">
+                            <img src="./img/jpg/preview3.jpg" alt="Работа 1">
+                        </a>
+                        <div class="swiper-text__overlay">Landing Page by deprussian</div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="about-block" id="about-block">
+            <h4 class="about-title--center projects-title">О Нас</h4>
+            <p class="about-subtitle--center welcome-subtitle">Мы - визуально нацеленны, цифровые, грамотные
+                разработчики, готовы погрузить вас в мир неонового техногламура.</p>
+            <div class="swiper aboutSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="about-swiper__profile">
+                            <a href="https://github.com/iBenji">
+                                <div class="about-profile__img" id="about-dmitriy__img"></div>
+                            </a>
+                            <p class="about-profile__name">Dmitriy Tsikh</p>
+                            <p class="about-profile__nickname">deprussian</p>
+                            <p class="about-profile__job">Frontend Developer</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about-swiper__profile">
+                            <div class="about-profile__img" id="about-demyan__img"></div>
+                            <p class="about-profile__name">Demyan Maksakov</p>
+                            <p class="about-profile__nickname">asix</p>
+                            <p class="about-profile__job">Python Developer</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about-swiper__profile">
+                            <div class="about-profile__img" id="about-unknown__img"></div>
+                            <p class="about-profile__name">Free Place</p>
+                            <p class="about-profile__nickname">Unknown</p>
+                            <p class="about-profile__job">Unknown</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about-swiper__profile">
+                            <div class="about-profile__img" id="about-unknown__img"></div>
+                            <p class="about-profile__name">Free Place</p>
+                            <p class="about-profile__nickname">Unknown</p>
+                            <p class="about-profile__job">Unknown</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./javascript/swiper.js"></script>
+    <script src="./javascript/app.js"></script>
+</body>
+
+</html>

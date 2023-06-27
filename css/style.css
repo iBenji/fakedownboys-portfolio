@@ -1,0 +1,231 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #E5E5E5;
+  background-color: #000;
+}
+
+.center {
+  padding-left: calc(50% - 500px);
+  padding-right: calc(50% - 500px);
+}
+
+.header-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 213px;
+  padding-bottom: 213px;
+}
+
+.header-svg__icon {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.header-title {
+  font-size: 122px;
+  color: #fff;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.header-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: "Overpass Mono", monospace;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #fff;
+  transition: text-shadow 0.2s ease-in-out;
+}
+.header-link:hover {
+  text-shadow: 1px 1px 0px #8d00ce;
+}
+
+.welcome-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  margin-bottom: 200px;
+}
+
+.welcome-title {
+  font-size: 48px;
+  color: #fff;
+  text-align: left;
+  line-height: 1.2em;
+  max-width: 480px;
+}
+
+.welcome-subtitle {
+  font-family: "Overpass Mono", monospace;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5em;
+  max-width: 480px;
+}
+
+.projects-block {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  margin-bottom: 200px;
+}
+
+.projects-title {
+  font-family: "Overpass Mono", monospace;
+  font-size: 48px;
+  color: #fff;
+  text-align: left;
+  line-height: 1.2em;
+  margin-bottom: 60px;
+}
+
+.swiper {
+  width: 100%;
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.swiper-pagination-progressbar-fill {
+  background: #FCA311 !important;
+}
+
+.swiper-text__overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0D0D0D;
+  border: 1px solid #FCA311;
+  padding: 20px;
+  z-index: 9999;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  filter: grayscale(80%);
+  transition: filter 0.2s ease-in-out;
+}
+.swiper-slide img:hover {
+  filter: grayscale(0%);
+}
+
+.about-block > .swiper {
+  width: 100%;
+  height: 300px;
+}
+.about-block > .swiper > .swiper-wrapper > .swiper-slide {
+  border-radius: 30px;
+  background-color: #0D0D0D;
+}
+
+.about-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  margin-bottom: 200px;
+}
+
+.about-title--center,
+.about-subtitle--center {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.about-swiper__profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 69px;
+  padding-bottom: 69px;
+}
+
+.about-profile__img {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 64px;
+  border: 1px solid transparent;
+  transition: transform 0.3s, border 0.5s ease-in-out;
+}
+.about-profile__img:hover {
+  transform: scale(1.1);
+  border: 1px solid #FCA311;
+}
+
+#about-dmitriy__img {
+  background-image: url(../img/jpg/profile1.jpg);
+}
+
+#about-demyan__img {
+  background-image: url(../img/jpg/profile2.jpg);
+}
+
+.about-profile__name {
+  text-transform: uppercase;
+  font-size: 20px;
+  max-width: 240px;
+}
+
+.about-profile__nickname,
+.about-profile__job {
+  font-family: "Overpass Mono", monospace;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2em;
+  max-width: 240px;
+}/*# sourceMappingURL=style.css.map */

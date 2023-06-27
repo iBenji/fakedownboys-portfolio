@@ -1,0 +1,128 @@
+@import './mixins.scss';
+@import './vars.scss';
+
+@include global-settings;
+
+.center {
+    padding-left: calc(50% - 1000px / 2);
+    padding-right: calc(50% - 1000px / 2);
+}
+
+.header-block {
+    @include flexbox(column, center, center, 50px);
+    padding-top: 213px;
+    padding-bottom: 213px;
+}
+
+.header-svg__icon {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.header-title {
+    @include fontstyle(null, 122px, null, $white-text__color, null, 1.2em);
+    text-transform: uppercase;
+}
+
+.header-list {
+    @include flexbox(row, center, center, 20px);
+    @include fontstyle($Overpass, 16px, 700, null, null, 1.2em);
+}
+
+.header-link {
+    text-decoration: none;
+    color: $white-text__color;
+    transition: text-shadow .2s ease-in-out;
+
+    &:hover {
+        text-shadow: 1px 1px 0px $violet-shadow__color;
+    }
+}
+
+//! Welcome Block
+
+.welcome-block {
+    @include flexbox(row, center, center, 40px);
+    @include global-section__settings;
+}
+
+.welcome-title {
+    @include fontstyle(null, 48px, null, $white-text__color, left, 1.2em);
+    max-width: 480px;
+}
+
+.welcome-subtitle {
+    @include fontstyle($Overpass, 20px, 400, null, left, 1.5em);
+    max-width: 480px;
+}
+
+//! Projects Block
+
+.projects-block {
+    @include global-section__settings;
+}
+
+.projects-title {
+    @include fontstyle($Overpass, 48px, null, $white-text__color, left, 1.2em);
+    margin-bottom: 60px;
+}
+
+@include global-swiper;
+
+//! About Block
+
+.about-block {
+    @include flexbox(column, center, center, 20px);
+    @include global-section__settings;
+}
+
+.about-title--center,
+.about-subtitle--center {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.about-swiper__profile {
+    @include flexbox(column, center, center, 10px);
+    padding-top: 69px;
+    padding-bottom: 69px;
+}
+
+.about-profile__img {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 64px;
+    border: 1px solid transparent;
+    transition: transform 0.3s, border 0.5s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+        border: 1px solid $orange-text__color;
+    }
+}
+
+//! Установка изображений профилей
+
+#about-dmitriy__img {
+    background-image: url(../img/jpg/profile1.jpg);
+}
+
+#about-demyan__img {
+    background-image: url(../img/jpg/profile2.jpg);
+}
+
+//! Установка изображений профилей
+
+.about-profile__name {
+    text-transform: uppercase;
+    font-size: 20px;
+    max-width: 240px;
+}
+
+.about-profile__nickname,
+.about-profile__job {
+    @include fontstyle($Overpass, 18px, null, $white-text__color, null, 1.2em);
+    max-width: 240px;
+}
