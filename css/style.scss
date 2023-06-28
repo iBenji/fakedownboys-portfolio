@@ -126,3 +126,26 @@
     @include fontstyle($Overpass, 18px, null, $white-text__color, null, 1.2em);
     max-width: 240px;
 }
+
+//! Skills Block
+
+.skills-block {
+    @include global-section__settings;
+}
+
+.skills-title--color, .skills-description__subtitle--color {
+    color: $orange-text__color;
+}
+
+.skills-description {
+    @include flexbox(row,space-between,baseline,40px);
+}
+
+.skills-description__content {
+    @include flexbox(column,flex-start,flex-start,10px);
+}
+
+.skills-description__subtitle-text {
+    max-width: 200px;
+    font-size: 16px;
+}

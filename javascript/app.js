@@ -1,15 +1,18 @@
 var isWelcomeBlockVisible = false;
 var isProjectBlockVisible = false;
 var isAboutBlockVisible = false;
+var isSkillsBlockVisible = false;
 
 window.addEventListener('scroll', function() {
   var welcomeBlock = document.querySelector('.welcome-block');
   var projectBlock = document.querySelector('.projects-block');
   var aboutBlock = document.querySelector('.about-block');
+  var skillsBlock = document.querySelector('.skills-block');
   var scrollPosition = window.scrollY + window.innerHeight;
   var welcomeBlockPosition = welcomeBlock.offsetTop;
   var projectBlockPosition = projectBlock.offsetTop;
   var aboutBlockPosition = aboutBlock.offsetTop;
+  var skillsBlockPosition = skillsBlock.offsetTop;
 
   if (scrollPosition > welcomeBlockPosition && !isWelcomeBlockVisible) {
     welcomeBlock.style.opacity = 1;
@@ -34,6 +37,14 @@ window.addEventListener('scroll', function() {
     aboutBlock.style.opacity = 0;
     isAboutBlockVisible = false;
   }
+
+  if (scrollPosition > skillsBlockPosition && !isSkillsBlockVisible) {
+    skillsBlock.style.opacity = 1;
+    isSkillsBlockVisible = true;
+  } else if (scrollPosition <= skillsBlockPosition && isSkillsBlockVisible) {
+    skillsBlock.style.opacity = 0;
+    isSkillsBlockVisible = false;
+  }
 });
 
 document.getElementById('projects-link').addEventListener('click', function(event) {
@@ -45,5 +56,11 @@ document.getElementById('projects-link').addEventListener('click', function(even
 document.getElementById('about-link').addEventListener('click', function(event) {
   event.preventDefault();
   var projectsSection = document.getElementById('about-block');
+  projectsSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('skills-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  var projectsSection = document.getElementById('skills-block');
   projectsSection.scrollIntoView({ behavior: 'smooth' });
 });
