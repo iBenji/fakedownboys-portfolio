@@ -149,3 +149,36 @@
     max-width: 200px;
     font-size: 16px;
 }
+
+//! Contacts Block
+
+.contacts-block {
+    @include global-section__settings;
+}
+
+.contacts-subtitle--font {
+    max-width: 600px;
+    color: $orange-text__color;
+    margin-bottom: 60px;
+}
+
+.contacts-links {
+    @include flexbox(row,flex-start,center,20px);
+}
+
+.fa-brands {
+    transition: transform .4s, filter .2s ease-in-out;
+    &:hover {
+        filter: invert(1);
+        transform: scale(1.2);
+    }
+}
+
+.footer {
+    padding-top: 104px;
+    padding-bottom: 104px;
+}
+
+#footer-date::before {
+    content: "\00A9\0020";
+}

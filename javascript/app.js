@@ -2,17 +2,20 @@ var isWelcomeBlockVisible = false;
 var isProjectBlockVisible = false;
 var isAboutBlockVisible = false;
 var isSkillsBlockVisible = false;
+var isContactsBlockVisible = false;
 
 window.addEventListener('scroll', function() {
   var welcomeBlock = document.querySelector('.welcome-block');
   var projectBlock = document.querySelector('.projects-block');
   var aboutBlock = document.querySelector('.about-block');
   var skillsBlock = document.querySelector('.skills-block');
+  var contactsBlock = document.querySelector('.contacts-block');
   var scrollPosition = window.scrollY + window.innerHeight;
   var welcomeBlockPosition = welcomeBlock.offsetTop;
   var projectBlockPosition = projectBlock.offsetTop;
   var aboutBlockPosition = aboutBlock.offsetTop;
   var skillsBlockPosition = skillsBlock.offsetTop;
+  var contactsBlockPosition = contactsBlock.offsetTop;
 
   if (scrollPosition > welcomeBlockPosition && !isWelcomeBlockVisible) {
     welcomeBlock.style.opacity = 1;
@@ -45,6 +48,14 @@ window.addEventListener('scroll', function() {
     skillsBlock.style.opacity = 0;
     isSkillsBlockVisible = false;
   }
+
+  if (scrollPosition > contactsBlockPosition && !isContactsBlockVisible) {
+    contactsBlock.style.opacity = 1;
+    isContactsBlockVisible = true;
+  } else if (scrollPosition <= contactsBlockPosition && isContactsBlockVisible) {
+    contactsBlock.style.opacity = 0;
+    isContactsBlockVisible = false;
+  }
 });
 
 document.getElementById('projects-link').addEventListener('click', function(event) {
@@ -64,3 +75,16 @@ document.getElementById('skills-link').addEventListener('click', function(event)
   var projectsSection = document.getElementById('skills-block');
   projectsSection.scrollIntoView({ behavior: 'smooth' });
 });
+
+document.getElementById('contacts-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  var projectsSection = document.getElementById('contacts-block');
+  projectsSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+
+var currentDate = new Date();
+var currentYear = currentDate.getFullYear();
+var yearElement = document.getElementById("footer-date");
+
+yearElement.innerHTML = currentYear;

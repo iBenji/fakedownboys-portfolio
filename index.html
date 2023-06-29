@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&family=Prompt&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ec9ebfd474.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
@@ -32,7 +33,7 @@
                     <a class="header-link" href="#" id="skills-link">Что мы можем</a>
                 </li>
                 <li class="header-item">
-                    <a class="header-link" href="#">Контакты</a>
+                    <a class="header-link" href="#" id="contacts-link">Контакты</a>
                 </li>
             </ul>
         </div>
@@ -73,7 +74,8 @@
         <section class="about-block" id="about-block">
             <h4 class="about-title--center projects-title">О нас</h4>
             <p class="about-subtitle--center welcome-subtitle">Мы - визуально нацеленны, цифровые, грамотные
-                разработчики, готовы погрузить вас в мир неонового техногламура. Те самые разработчики без принципов.</p>
+                разработчики, готовы погрузить вас в мир неонового техногламура. Те самые разработчики без принципов.
+            </p>
             <div class="swiper aboutSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -88,7 +90,9 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="about-swiper__profile">
-                            <div class="about-profile__img" id="about-demyan__img"></div>
+                            <a href="https://t.me/xxdemik">
+                                <div class="about-profile__img" id="about-demyan__img"></div>
+                            </a>
                             <p class="about-profile__name">Demyan</p>
                             <p class="about-profile__nickname">asix</p>
                             <p class="about-profile__job">Python Developer</p>
@@ -125,12 +129,14 @@
                 </div>
                 <div class="skills-description__content">
                     <p class="skills-description__subtitle--color welcome-subtitle">Python-Development</p>
-                    <p class="skills-description__subtitle-text welcome-subtitle">Телеграм боты, Парсеры, Скрапперы информации, Работа с файлами
+                    <p class="skills-description__subtitle-text welcome-subtitle">Телеграм боты, Парсеры, Скрапперы
+                        информации, Работа с файлами
                     </p>
                 </div>
                 <div class="skills-description__content">
                     <p class="skills-description__subtitle--color welcome-subtitle">Game-Development</p>
-                    <p class="skills-description__subtitle-text welcome-subtitle">Unreal Engine 5, Работа с мультиплеером, Оптимизация
+                    <p class="skills-description__subtitle-text welcome-subtitle">Unreal Engine 5, Работа с
+                        мультиплеером, Оптимизация
                     </p>
                 </div>
                 <div class="skills-description__content">
@@ -140,7 +146,21 @@
                 </div>
             </div>
         </section>
+
+        <section class="contacts-block" id="contacts-block">
+            <h6 class="contacts-title projects-title">Контакты</h6>
+            <p class="contacts-subtitle--font welcome-subtitle">Готовы связаться с нами? Переходите по контактам ниже!
+            </p>
+            <div class="contacts-links">
+                <a href="https://t.me/chupapimunanho"><i class="fa-brands fa-telegram fa-2xl"
+                        style="color: #FCA311;"></i></a>
+                <a href="https://vk.com/wh1te.n1gga"><i class="fa-brands fa-vk fa-2xl" style="color: #FCA311;"></i></a>
+            </div>
+        </section>
     </main>
+    <footer class="footer center">
+        <p class="footer-credits"><span id="footer-date"></span> Designed by deprussian</p>
+    </footer>
 
     <script src="./libs/particles.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

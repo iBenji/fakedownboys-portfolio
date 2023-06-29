@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -261,4 +262,42 @@ body {
 .skills-description__subtitle-text {
   max-width: 200px;
   font-size: 16px;
+}
+
+.contacts-block {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  margin-bottom: 200px;
+}
+
+.contacts-subtitle--font {
+  max-width: 600px;
+  color: #FCA311;
+  margin-bottom: 60px;
+}
+
+.contacts-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.fa-brands {
+  transition: transform 0.4s, filter 0.2s ease-in-out;
+}
+.fa-brands:hover {
+  filter: invert(1);
+  transform: scale(1.2);
+}
+
+.footer {
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+#footer-date::before {
+  content: "© ";
 }/*# sourceMappingURL=style.css.map */
