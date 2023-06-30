@@ -316,4 +316,43 @@ body {
   .projects-title {
     font-size: 40px;
   }
+}
+@media (min-width: 320px) and (max-width: 809px) {
+  body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .header-title {
+    font-size: 36px;
+  }
+  .header-list {
+    flex-direction: column;
+  }
+  .welcome-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .welcome-block > .welcome-subtitle {
+    text-align: center;
+  }
+  .swiper-slide {
+    height: 80% !important;
+  }
+  .about-profile__img {
+    width: 40px;
+    height: 40px;
+  }
+  .about-profile__name {
+    font-size: 14px;
+  }
+  .about-profile__nickname, .about-profile__job {
+    font-size: 12px;
+  }
+  .skills-title--color {
+    font-size: 40px;
+    text-align: center;
+  }
+  .skills-description {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
