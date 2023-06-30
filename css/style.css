@@ -300,4 +300,20 @@ body {
 
 #footer-date::before {
   content: "© ";
+}
+
+@media (min-width: 810px) and (max-width: 1199px) {
+  body {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .header-title {
+    font-size: 80px;
+  }
+  .welcome-block {
+    justify-content: flex-start;
+  }
+  .projects-title {
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
