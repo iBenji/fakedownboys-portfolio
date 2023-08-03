@@ -113,8 +113,8 @@
     background-image: url(../img/jpg/profile2.jpg);
 }
 
-#about-petr__img {
-    background-image: url(../img/jpg/profile3.jpg);
+#about-kenny__img {
+    background-image: url(../img/png/kenny.png);
 }
 
 //! Установка изображений профилей
@@ -128,7 +128,20 @@
 .about-profile__nickname,
 .about-profile__job {
     @include fontstyle($Overpass, 18px, null, $white-text__color, null, 1.2em);
+    text-decoration: none;
     max-width: 240px;
+}
+
+
+#about-profile__country {
+    background-image: url(../img/png/ger.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    &:first-of-type {
+        background-image: url(../img/png/ru.png);
+    }
 }
 
 //! Skills Block
@@ -183,8 +196,21 @@
     padding-bottom: 104px;
 }
 
-#footer-date::before {
-    content: "\00A9\0020";
+.footer-block {
+    @include flexbox(row,space-between,center,10px);
+}
+
+.footer-credits__text {
+    @include flexbox(column,center,flex-start,10px);
+}
+
+.footer-links {
+    @include flexbox(column,center,flex-start,10px);
+}
+
+.footer-link {
+    text-decoration: none;
+    color: $violet-shadow__color;
 }
 
 @include adaptive;

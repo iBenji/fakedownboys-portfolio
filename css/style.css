@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -129,6 +128,17 @@ body {
   background: #FCA311 !important;
 }
 
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, -1px) !important;
+}
+
+.swiper-pagination-bullet {
+  background: var(--swiper-pagination-bullet-inactive-color, red) !important;
+}
+
 .swiper-text__overlay {
   position: absolute;
   top: 50%;
@@ -216,8 +226,8 @@ body {
   background-image: url(../img/jpg/profile2.jpg);
 }
 
-#about-petr__img {
-  background-image: url(../img/jpg/profile3.jpg);
+#about-kenny__img {
+  background-image: url(../img/png/kenny.png);
 }
 
 .about-profile__name {
@@ -232,7 +242,19 @@ body {
   font-size: 18px;
   color: #fff;
   line-height: 1.2em;
+  text-decoration: none;
   max-width: 240px;
+}
+
+#about-profile__country {
+  background-image: url(../img/png/ger.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+#about-profile__country:first-of-type {
+  background-image: url(../img/png/ru.png);
 }
 
 .skills-block {
@@ -302,61 +324,77 @@ body {
   padding-bottom: 104px;
 }
 
-#footer-date::before {
-  content: "© ";
+.footer-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
-@media (min-width: 810px) and (max-width: 1199px) {
-  body {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+.footer-credits__text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #8d00ce;
+}
+
+@media (max-width: 1024px) {
   .header-title {
     font-size: 80px;
   }
-  .welcome-block {
-    justify-content: flex-start;
-  }
-  .projects-title {
-    font-size: 40px;
-  }
 }
-@media (min-width: 320px) and (max-width: 809px) {
-  body {
-    padding-left: 5px;
-    padding-right: 5px;
+@media (max-width: 768px) {
+  .root {
+    padding: 0 15px;
   }
   .header-title {
-    font-size: 36px;
+    font-size: 35px;
   }
-  .header-list {
-    flex-direction: column;
+  .header-list,
+  .welcome-subtitle {
+    font-size: 12px;
   }
-  .welcome-title {
-    font-size: 30px;
+  .about-profile__nickname,
+  .about-profile__job {
+    font-size: 10px;
+  }
+  .welcome-title,
+  .projects-title {
     text-align: center;
-  }
-  .welcome-block > .welcome-subtitle {
-    text-align: center;
+    font-size: 32px;
   }
   .swiper-slide {
-    height: 80% !important;
-  }
-  .about-profile__img {
-    width: 40px;
-    height: 40px;
+    flex-basis: 1;
   }
   .about-profile__name {
     font-size: 14px;
   }
-  .about-profile__nickname, .about-profile__job {
-    font-size: 12px;
+  .about-block > .swiper {
+    height: 250px;
   }
-  .skills-title--color {
-    font-size: 40px;
-    text-align: center;
+  .about-profile__img {
+    width: 50px;
+    height: 50px;
   }
   .skills-description {
-    justify-content: center;
+    gap: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
