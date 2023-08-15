@@ -1,90 +1,45 @@
-var isWelcomeBlockVisible = false;
-var isProjectBlockVisible = false;
-var isAboutBlockVisible = false;
-var isSkillsBlockVisible = false;
-var isContactsBlockVisible = false;
-
-window.addEventListener('scroll', function() {
-  var welcomeBlock = document.querySelector('.welcome-block');
-  var projectBlock = document.querySelector('.projects-block');
-  var aboutBlock = document.querySelector('.about-block');
-  var skillsBlock = document.querySelector('.skills-block');
-  var contactsBlock = document.querySelector('.contacts-block');
-  var scrollPosition = window.scrollY + window.innerHeight;
-  var welcomeBlockPosition = welcomeBlock.offsetTop;
-  var projectBlockPosition = projectBlock.offsetTop;
-  var aboutBlockPosition = aboutBlock.offsetTop;
-  var skillsBlockPosition = skillsBlock.offsetTop;
-  var contactsBlockPosition = contactsBlock.offsetTop;
-
-  if (scrollPosition > welcomeBlockPosition && !isWelcomeBlockVisible) {
-    welcomeBlock.style.opacity = 1;
-    isWelcomeBlockVisible = true;
-  } else if (scrollPosition <= welcomeBlockPosition && isWelcomeBlockVisible) {
-    welcomeBlock.style.opacity = 0;
-    isWelcomeBlockVisible = false;
+// Бегущая строка
+function resetTranslation(element) {
+  var parentWidth = element.parentNode.offsetWidth;
+  var elementWidth = element.offsetWidth;
+  if (elementWidth > parentWidth) {
+    var translation = elementWidth - parentWidth;
+    element.style.transform = "translateX(" + translation + "px)";
   }
+}
 
-  if (scrollPosition > projectBlockPosition && !isProjectBlockVisible) {
-    projectBlock.style.opacity = 1;
-    isProjectBlockVisible = true;
-  } else if (scrollPosition <= projectBlockPosition && isProjectBlockVisible) {
-    projectBlock.style.opacity = 0;
-    isProjectBlockVisible = false;
-  }
+var runnerline = document.getElementById("runnerline");
+var items = runnerline.getElementsByClassName("header-runnerline__item");
 
-  if (scrollPosition > aboutBlockPosition && !isAboutBlockVisible) {
-    aboutBlock.style.opacity = 1;
-    isAboutBlockVisible = true;
-  } else if (scrollPosition <= aboutBlockPosition && isAboutBlockVisible) {
-    aboutBlock.style.opacity = 0;
-    isAboutBlockVisible = false;
-  }
+for (var i = 0; i < items.length; i++) {
+  resetTranslation(items[i]);
+}
 
-  if (scrollPosition > skillsBlockPosition && !isSkillsBlockVisible) {
-    skillsBlock.style.opacity = 1;
-    isSkillsBlockVisible = true;
-  } else if (scrollPosition <= skillsBlockPosition && isSkillsBlockVisible) {
-    skillsBlock.style.opacity = 0;
-    isSkillsBlockVisible = false;
-  }
-
-  if (scrollPosition > contactsBlockPosition && !isContactsBlockVisible) {
-    contactsBlock.style.opacity = 1;
-    isContactsBlockVisible = true;
-  } else if (scrollPosition <= contactsBlockPosition && isContactsBlockVisible) {
-    contactsBlock.style.opacity = 0;
-    isContactsBlockVisible = false;
+window.addEventListener("resize", function () {
+  for (var i = 0; i < items.length; i++) {
+    resetTranslation(items[i]);
   }
 });
 
-document.getElementById('projects-link').addEventListener('click', function(event) {
-  event.preventDefault();
-  var projectsSection = document.getElementById('projects-block');
-  projectsSection.scrollIntoView({ behavior: 'smooth' });
-});
-
-document.getElementById('about-link').addEventListener('click', function(event) {
-  event.preventDefault();
-  var projectsSection = document.getElementById('about-block');
-  projectsSection.scrollIntoView({ behavior: 'smooth' });
-});
-
-document.getElementById('skills-link').addEventListener('click', function(event) {
-  event.preventDefault();
-  var projectsSection = document.getElementById('skills-block');
-  projectsSection.scrollIntoView({ behavior: 'smooth' });
-});
-
-document.getElementById('contacts-link').addEventListener('click', function(event) {
-  event.preventDefault();
-  var projectsSection = document.getElementById('contacts-block');
-  projectsSection.scrollIntoView({ behavior: 'smooth' });
-});
-
-
+// Получаем текущую дату
 var currentDate = new Date();
+// Получаем год из текущей даты
 var currentYear = currentDate.getFullYear();
-var yearElement = document.getElementById("footer-date");
-
+// Находим элемент на вашей странице, где будет отображаться год
+var yearElement = document.getElementById("year");
+// Присваиваем содержимое элементу года
 yearElement.innerHTML = currentYear;
+
+//Swiper reviews
+var swiper = new Swiper(".swiperReviews", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+// Swiper projects
+var swiper = new Swiper(".swiperProjects", {
+});

@@ -1,195 +1,190 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAKEDOWNBOYS - GROUP</title>
-    <link rel="icon" type="image/svg" href="./img/svg/icon.svg">
+    <link rel="icon" href="./img/svg/logo.svg" type="image/png">
+    <title>FAKEDOWNBOYS Group | Web-Development | Python-Development</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&family=Prompt&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ec9ebfd474.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/globalSettings/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 
 <body>
     <div class="root">
-        <header class="header center">
-            <div class="header-block">
-                <img class="header-svg__icon" src="./img/svg/icon.svg" alt="">
-                <h1 class="header-title">Fakedownboys</h1>
-                <ul class="header-list">
-                    <li class="header-item">
-                        <a class="header-link" href="#" id="projects-link">Проекты</a>
+        <header class="header">
+            <div class="header-runnerline">
+                <ul id="runnerline">
+                    <li class="header-runnerline__item">
+                        <h2 class="header-title">web-development</h2>
                     </li>
-                    <li class="header-item">
-                        <a class="header-link" href="#" id="about-link">О Нас</a>
+                    <li class="header-runnerline__item">
+                        <h3 class="header-title">python-development</h3>
                     </li>
-                    <li class="header-item">
-                        <a class="header-link" href="#" id="skills-link">Что мы можем</a>
+                    <li class="header-runnerline__item">
+                        <h4 class="header-title">c++ development</h4>
                     </li>
-                    <li class="header-item">
-                        <a class="header-link" href="#" id="contacts-link">Контакты</a>
+                    <li class="header-runnerline__item">
+                        <h5 class="header-title">game development</h5>
+                    </li>
+                    <li class="header-runnerline__item">
+                        <h6 class="header-title">game hacking</h6>
+                    </li>
+                    <li class="header-runnerline__item">
+                        <h6 class="header-title">open bullet configs</h6>
                     </li>
                 </ul>
             </div>
         </header>
-        <main class="main center">
-            <section class="welcome-block">
-                <h2 class="welcome-title">Group FAKEDOWNBOYS</h2>
-                <p class="welcome-subtitle">Добро пожаловать на страницу группы FAKEDOWNBOYS! Мы опытные специалисты в
-                    сфере
-                    Web-Development и Python-Development!</p>
-            </section>
-            <section class="projects-block" id="projects-block">
-                <h3 class="projects-title">Наши примеры работ</h3>
-                <div class="swiper projectsSwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="https://ibenji.github.io/car-service-html/">
-                                <img src="./img/jpg/preview1.jpg" alt="Работа 1">
-                            </a>
-                            <div class="swiper-text__overlay">Landing Page by deprussian</div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://ibenji.github.io/doors-service-html/">
-                                <img src="./img/jpg/preview2.jpg" alt="Работа 1">
-                            </a>
-                            <div class="swiper-text__overlay">Landing Page by deprussian</div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://ibenji.github.io/open-landingpage-html/">
-                                <img src="./img/jpg/preview3.jpg" alt="Работа 1">
-                            </a>
-                            <div class="swiper-text__overlay">Landing Page by deprussian</div>
-                        </div>
+        <main class="main">
+            <section class="intro">
+                <div class="intro-logo__container center">
+                    <div class="intro-logo__design">
+                        <div class="intro-rectangle1"></div>
+                        <img class="intro-logo" src="./img/svg/logo.svg" alt="FAKEDOWNBOYS - логотип">
+                        <h1 class="intro-title">fakedownboys</h1>
+                        <span class="intro-warning">-system: index-</span>
+                        <div class="intro-rectangle2"></div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <nav class="intro-nav center">
+                        <ul class="intro-nav__list">
+                            <li class="intro-nav__item">
+                                <a href="./projects.html">projects & reviews</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </section>
-
-            <section class="about-block" id="about-block">
-                <h4 class="about-title--center projects-title">О нас</h4>
-                <p class="about-subtitle--center welcome-subtitle">Мы - визуально нацеленны, цифровые, грамотные
-                    разработчики, готовы погрузить вас в мир неонового техногламура. Те самые разработчики без
-                    принципов.
-                </p>
-                <div class="swiper aboutSwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="about-swiper__profile">
-                                <a href="https://github.com/iBenji">
-                                    <div class="about-profile__img" id="about-dmitriy__img"></div>
-                                </a>
-                                <p class="about-profile__name">Dmitriy</p>
-                                <a class="about-profile__nickname" href="https://t.me/chupapimunanho">deprussian</a>
-                                <p class="about-profile__job">Frontend</p>
-                                <div id="about-profile__country"></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="about-swiper__profile">
-                                <a href="https://t.me/xxdemik">
-                                    <div class="about-profile__img" id="about-demyan__img"></div>
-                                </a>
-                                <p class="about-profile__name">Demyan</p>
-                                <a class="about-profile__nickname" href="https://t.me/xxdemik">asix</a>
-                                <p class="about-profile__job">Python</p>
-                                <div id="about-profile__country"></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="about-swiper__profile">
-                                <div class="about-profile__img" id="about-kenny__img"></div>
-                                <p class="about-profile__name">Kenny</p>
-                                <a class="about-profile__nickname" href="https://t.me/chupapimunanho">DasCustomer</a>
-                                <p class="about-profile__job">C++</p>
-                                <div id="about-profile__country"></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="about-swiper__profile">
-                                <div class="about-profile__img" id="about-unknown__img"></div>
-                                <p class="about-profile__name">Free Place</p>
-                                <p class="about-profile__nickname">Unknown</p>
-                                <p class="about-profile__job">Unknown</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
+            <section class="about">
+                <div class="about-text">
+                    <h2 class="title">About us</h2>
+                    <p class="subtitle">We are visually-oriented, digital-savvy developers ready to immerse you in the
+                        world of neon technoglamour. We are developers without principles and ethical norms. We take on
+                        any reasonable job.</p>
                 </div>
-            </section>
-
-            <section class="skills-block" id="skills-block">
-                <h5 class="skills-title--color projects-title">Чем мы занимаемся?</h5>
-                <div class="skills-description">
-                    <div class="skills-description__content">
-                        <p class="skills-description__subtitle--color welcome-subtitle">Web-Development</p>
-                        <p class="skills-description__subtitle-text welcome-subtitle">HTML5, SCSS, SASS, LESS, React,
-                            Javascript.
-                        </p>
+                <div class="about-cards center">
+                    <div class="about-card__container">
+                        <div class="about-card__profile">
+                            <div class="about-card__img" id="about-card__img-dmirtiy"></div>
+                            <p class="about-card__name">Dmitriy</p>
+                            <p class="about-card__nick"><a href="https://t.me/chupapimunanho">deprussian</a></p>
+                            <p class="about-card__country">Russian Federation</p>
+                            <p class="about-card__job">web dev | UE5 dev | OB2</p>
+                        </div>
                     </div>
-                    <div class="skills-description__content">
-                        <p class="skills-description__subtitle--color welcome-subtitle">Python-Development</p>
-                        <p class="skills-description__subtitle-text welcome-subtitle">Телеграм боты, парсеры, скрапперы
-                            информации, работа с файлами, различного рода ПО.
-                        </p>
+                    <div class="about-card__container">
+                        <div class="about-card__profile">
+                            <div class="about-card__img" id="about-card__img-asix"></div>
+                            <p class="about-card__name">Demiyan</p>
+                            <p class="about-card__nick"><a href="https://t.me/xxdemik">asix</a></p>
+                            <p class="about-card__country">Russian Federation</p>
+                            <p class="about-card__job">Python Dev</p>
+                        </div>
                     </div>
-                    <div class="skills-description__content">
-                        <p class="skills-description__subtitle--color welcome-subtitle">Game-Development</p>
-                        <p class="skills-description__subtitle-text welcome-subtitle">Unreal Engine 5, работа с
-                            мультиплеером, оптимизация, помощь в разработке.
-                        </p>
-                    </div>
-                    <div class="skills-description__content">
-                        <p class="skills-description__subtitle--color welcome-subtitle">C++ Development</p>
-                        <p class="skills-description__subtitle-text welcome-subtitle">От простых системных приложений и
-                            баз данных до сложных программных обеспечений таких как: HWID Bypass разного уровня,
-                            создание приватных программ (читы, скрипты, боты и многое другое).
-                        </p>
-                    </div>
-                    <div class="skills-description__content">
-                        <p class="skills-description__subtitle--color welcome-subtitle">Open Bullet</p>
-                        <p class="skills-description__subtitle-text welcome-subtitle">Создание конфигов, работа с
-                            капчей.
-                        </p>
+                    <div class="about-card__container">
+                        <div class="about-card__profile">
+                            <div class="about-card__img" id="about-card__img-kenny"></div>
+                            <p class="about-card__name">Kenny</p>
+                            <p class="about-card__nick"><a href="https://t.me/Enzoxx3">DasCustomer</a></p>
+                            <p class="about-card__country">Germany</p>
+                            <p class="about-card__job">web dev | c++ dev</p>
+                        </div>
                     </div>
                 </div>
             </section>
-
-            <section class="contacts-block" id="contacts-block">
-                <h6 class="contacts-title projects-title">Свяжитесь с нами!</h6>
-                <p class="contacts-subtitle--font welcome-subtitle">Возьмемся за задачи практически любого типа и рода.
-                    Поэтому мы и зовемся, кодеры без принципов. Если вы заинтересованы в совместной работе, то
-                    обращайтесь по контакту ниже либо переходите в чат через наши никнеймы выше.
-                </p>
-                <div class="contacts-links">
-                    <a href="https://t.me/chupapimunanho"><i class="fa-brands fa-telegram fa-2xl"
-                            style="color: #FCA311;"></i></a>
+            <section class="job center">
+                <h3 class="title">what we can do?</h3>
+                <div class="job-container">
+                    <div class="job-info">
+                        <p class="job-title subtitle">Web-Development</p>
+                        <p class="job-subtitle subtitle">HTML5, SCSS, SASS, LESS, React, JavaScript, PHP, SEO
+                            optimization, Bootstrap.</p>
+                    </div>
+                    <div class="job-info">
+                        <p class="job-title subtitle">Python-Development</p>
+                        <p class="job-subtitle subtitle">Telegram bots, parsers, scrapers, sniffers, file handling, GUI
+                            application development.</p>
+                    </div>
+                    <div class="job-info">
+                        <p class="job-title subtitle">Game-Development</p>
+                        <p class="job-subtitle subtitle">Unreal Engine 5, multiplayer assistance, development support.
+                        </p>
+                    </div>
+                    <div class="job-info">
+                        <p class="job-title subtitle">C++ Development</p>
+                        <p class="job-subtitle subtitle">Databases, system applications/programs, private game cheats
+                            development.</p>
+                    </div>
+                    <div class="job-info">
+                        <p class="job-title subtitle">Open Bullet 2</p>
+                        <p class="job-subtitle subtitle">Creation of private website configurations, captcha handling,
+                            OCR.</p>
+                    </div>
+                    <div class="job-info">
+                        <p class="job-title subtitle">Website Design</p>
+                        <p class="job-subtitle subtitle">Creation of website design for your future website using Figma.
+                        </p>
+                    </div>
+                    <div class="job-info">
+                        <p class="job-title subtitle">Assistance</p>
+                        <p class="job-subtitle subtitle">Support for projects created by us, according to agreement.
+                            Website deployment on hosting platforms on your behalf.</p>
+                    </div>
                 </div>
             </section>
         </main>
-        <footer class="footer center">
-            <div class="footer-block">
-                <div class="footer-credits__text">
-                    <p class="footer-credits"><span id="footer-date"></span> Designed by deprussian</p>
-                    <p class="footer-credits">&COPY; Group FAKEDOWNBOYS</p>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-text__copyright">
+                    <p class="footer-subtitle">Designed & created by deprussian</p>
+                    <p class="footer-subtitle">&COPY; <span id="year"></span> Group fakedownboys</p>
                 </div>
-                <div class="footer-links">
-                    <p class="footer-credits">Наши продукты</p>
-                    <p class="footer-credits"><a class="footer-link"
-                            href="https://ultimate-fakkers.co.network/index.php">ULTIMATE-FAKKERS</a></p>
+                <div class="footer-text__links">
+                    <p class="footer-title footer-subtitle">Our Links</p>
+                    <p class="footer-subtitle"><a href="https://ultimate-fakkers.co.network">Ultimate-fakkers</a></p>
+                    <div class="footer-community">
+                        <p class="footer-subtitle">deprussian: <a href="https://github.com/iBenji"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 8 8"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4 0C1.79066 0 0 1.83598 0 4.10125C0 5.91297 1.14578 7.45043 2.73551 7.9932C2.93563 8.03021 3.00782 7.90398 3.00782 7.79542C3.00782 7.69797 3.00461 7.43974 3.00341 7.09803C1.89052 7.34557 1.6555 6.54786 1.6555 6.54786C1.47423 6.07416 1.21155 5.94792 1.21155 5.94792C0.848606 5.6934 1.23922 5.69915 1.23922 5.69915C1.64107 5.72794 1.85161 6.12186 1.85161 6.12186C2.20854 6.74852 2.78845 6.56759 3.01544 6.46274C3.05193 6.19752 3.15621 6.01659 3.2701 5.91421C2.38219 5.811 1.44857 5.45901 1.44857 3.88702C1.44857 3.44005 1.60457 3.07327 1.85923 2.78707C1.81873 2.68304 1.68037 2.26568 1.89894 1.70152C1.89894 1.70152 2.23461 1.59091 2.9986 2.12135C3.32488 2.03034 3.66146 1.98389 3.9996 1.98319C4.33775 1.98375 4.67434 2.03021 5.0006 2.12135C5.76499 1.5905 6.10026 1.70152 6.10026 1.70152C6.31883 2.26568 6.18167 2.68304 6.13996 2.78707C6.39663 3.07327 6.55063 3.43964 6.55063 3.88702C6.55063 5.46313 5.6162 5.80935 4.72508 5.91092C4.86746 6.03756 4.99579 6.28757 4.99579 6.66998C4.99579 7.21851 4.99098 7.66096 4.99098 7.79542C4.99098 7.90521 5.06236 8.03268 5.26649 7.99238C6.85542 7.44878 8 5.91256 8 4.10125C8 1.83598 6.20934 0 4 0Z"
+                                        fill="#0090FF" />
+                                </svg></a> <a href="https://t.me/chupapimunanho"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" viewBox="0 0 8 8" fill="none">
+                                    <path
+                                        d="M7.46001 0.0526019L0.373551 3.31095C-0.110071 3.54256 -0.107274 3.86425 0.28482 4.0077L2.1042 4.68444L6.31371 1.51759C6.51275 1.37319 6.69461 1.45087 6.54513 1.6091L3.13459 5.2792H3.13379L3.13459 5.27968L3.00909 7.51577C3.19295 7.51577 3.27408 7.41521 3.3772 7.29654L4.26091 6.27191L6.09908 7.89083C6.43801 8.11339 6.68142 7.99902 6.76575 7.51672L7.97241 0.736011C8.09592 0.145534 7.78336 -0.121825 7.46001 0.0526019Z"
+                                        fill="#0090FF" />
+                                </svg></a></p>
+
+                    </div>
+                    <div class="footer-community">
+                        <p class="footer-subtitle">asix: <a href="https://t.me/xxdemik"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 8 8"
+                                    fill="none">
+                                    <path
+                                        d="M7.46001 0.0526019L0.373551 3.31095C-0.110071 3.54256 -0.107274 3.86425 0.28482 4.0077L2.1042 4.68444L6.31371 1.51759C6.51275 1.37319 6.69461 1.45087 6.54513 1.6091L3.13459 5.2792H3.13379L3.13459 5.27968L3.00909 7.51577C3.19295 7.51577 3.27408 7.41521 3.3772 7.29654L4.26091 6.27191L6.09908 7.89083C6.43801 8.11339 6.68142 7.99902 6.76575 7.51672L7.97241 0.736011C8.09592 0.145534 7.78336 -0.121825 7.46001 0.0526019Z"
+                                        fill="#0090FF" />
+                                </svg></a></p>
+
+                    </div>
+                    <div class="footer-community">
+                        <p class="footer-subtitle">kenny: <a href="https://t.me/Enzoxx3"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 8 8"
+                                    fill="none">
+                                    <path
+                                        d="M7.46001 0.0526019L0.373551 3.31095C-0.110071 3.54256 -0.107274 3.86425 0.28482 4.0077L2.1042 4.68444L6.31371 1.51759C6.51275 1.37319 6.69461 1.45087 6.54513 1.6091L3.13459 5.2792H3.13379L3.13459 5.27968L3.00909 7.51577C3.19295 7.51577 3.27408 7.41521 3.3772 7.29654L4.26091 6.27191L6.09908 7.89083C6.43801 8.11339 6.68142 7.99902 6.76575 7.51672L7.97241 0.736011C8.09592 0.145534 7.78336 -0.121825 7.46001 0.0526019Z"
+                                        fill="#0090FF" />
+                                </svg></a></p>
+
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./javascript/swiper.js"></script>
     <script src="./javascript/app.js"></script>
 </body>
 

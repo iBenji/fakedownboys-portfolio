@@ -1,0 +1,97 @@
+/* Reviews */
+
+.reviews .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*? Reviews swiper */
+
+.swiper-reviews {
+    background-color: #0C0C0C;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.swiper-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px;
+}
+
+.swiper-item {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.swiper-item:nth-child(4) {
+    margin: 0 auto;
+    transition: text-shadow .2s ease-in-out;
+    -webkit-transition: text-shadow .2s ease-in-out;
+    -moz-transition: text-shadow .2s ease-in-out;
+    -ms-transition: text-shadow .2s ease-in-out;
+    -o-transition: text-shadow .2s ease-in-out;
+}
+
+.swiper-item:nth-child(4):hover {
+    text-shadow: 0 0 3px var(--greentheme);
+}
+
+.swiper-item__site {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--greentheme);
+}
+
+.swiper-item__comment {
+    font-weight: 300;
+    height: 200px;
+    overflow: auto;
+}
+
+/* Projects */
+
+.swiperProjects {
+    margin-bottom: 170px;
+}
+
+.swiper-project {
+    position: relative;
+}
+
+.projects .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects {
+    margin-top: 140px;
+}
+
+.swiper-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1b1b1b;
+    z-index: 999;
+}
+
+.about-card__name {
+    text-decoration: none;
+    color: #fff;
+}
+
+.swiper-text .about-card__name p {
+    font-weight: 500;
+}
